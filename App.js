@@ -1,11 +1,13 @@
+import React from 'react';
+import Cesta from './src/telas/Cesta';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Alura!</Text>
       <StatusBar style="auto" />
+      <Cesta />
     </View>
   );
 }
