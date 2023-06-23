@@ -1,5 +1,5 @@
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
-
+import Texto from '../componentes/Texto'
 import topo from "../../assets/topo.png";
 import logo from "../../assets/logo.png";
 
@@ -9,21 +9,21 @@ export default function Cesta() {
     return (
         <>
             <Image style={estilos.topo} source={topo} />
-            <Text style={estilos.titulo}>Detalhes da cesta</Text>
+            <Texto style={estilos.titulo}>Detalhes da cesta</Texto>
             <View style={estilos.cesta}>
-                <Text style={estilos.nome}>Cesta de Verduras</Text>
+                <Texto style={estilos.nome}>Cesta de Verduras</Texto>
                 <View style={estilos.fazenda}>
                     <Image style={estilos.imagemFazenda} source={logo} />
-                    <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
+                    <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
                 </View>
-                <Text style={estilos.descricao}>
+                <Texto style={estilos.descricao}>
                     Uma cesta com produtos selecionados
                     cuidadosamente da fazendo para
                     sua cozinha
-                </Text>
-                <Text style={estilos.preco}>
+                </Texto>
+                <Texto style={estilos.preco}>
                     R$ 40,00
-                </Text>
+                </Texto>
             </View>
         </>
     );
@@ -35,14 +35,14 @@ const estilos = StyleSheet.create({
         width: "100%"
     },
     titulo: {
+        width: "100%",
         position: "absolute",
         textAlign: "center",
-        width: "100%",
         fontSize: 16,
         lineHeight: 26,
         color: "white",
         padding: 16,
-        fontFamily:"MontserratBold"
+        fontWeight: "bold"
     },
     cesta: {
         paddingVertical: 20,
@@ -52,7 +52,7 @@ const estilos = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontFamily:"MontserratBold"
+        fontWeight: "bold"
     },
     fazenda: {
         flexDirection: "row",
@@ -66,20 +66,18 @@ const estilos = StyleSheet.create({
     },
     nomeFazenda: {
         fontSize: 20,
-        lineHeight: 26,
-        fontFamily:"Montserrat"
+        lineHeight: 26
     },
     descricao: {
         color: "#a3a3a3",
         fontSize: 16,
-        lineHeight: 26,
-        fontFamily:"Montserrat"
+        lineHeight: 26
     },
     preco: {
         color: "#2a9f85",
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8,
-        fontFamily:"MontserratBold"
+        fontWeight: "bold"
     }
 });
