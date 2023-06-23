@@ -41,8 +41,8 @@ const estilos = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         color: "white",
-        fontWeight: "bold",
-        padding: 16
+        padding: 16,
+        fontFamily:"MontserratBold"
     },
     cesta: {
         paddingVertical: 20,
@@ -52,10 +52,11 @@ const estilos = StyleSheet.create({
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
-        fontWeight: "bold"
+        fontFamily:"MontserratBold"
     },
     fazenda: {
         flexDirection: "row",
+        alignItems: "center",
         paddingVertical: 12,
         gap: 12
     },
@@ -65,18 +66,20 @@ const estilos = StyleSheet.create({
     },
     nomeFazenda: {
         fontSize: 20,
-        lineHeight: 26
+        lineHeight: 26,
+        fontFamily:"Montserrat"
     },
     descricao: {
         color: "#a3a3a3",
         fontSize: 16,
-        lineHeight: 26
+        lineHeight: 26,
+        fontFamily:"Montserrat"
     },
     preco: {
         color: "#2a9f85",
-        fontWeight: "bold",
         fontSize: 26,
         lineHeight: 42,
-        marginTop: 8
+        marginTop: 8,
+        fontFamily:"MontserratBold"
     }
 });
