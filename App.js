@@ -1,8 +1,7 @@
 import Cesta from './src/telas/Cesta';
 import { SafeAreaView, StatusBar, View } from 'react-native';
-
+import AppLoading from 'expo-app-loading';
 import mock from './src/mocks/cesta';
-
 import {
   useFonts,
   Montserrat_400Regular,
@@ -16,7 +15,7 @@ export default function App() {
   })
 
   if (!minhasFontes) {
-    return <View />
+    return <AppLoading />
   }
 
   return (
