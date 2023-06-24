@@ -1,6 +1,8 @@
 import Cesta from './src/telas/Cesta';
 import { SafeAreaView, StatusBar, View } from 'react-native';
 
+import mock from './src/mocks/cesta';
+
 import {
   useFonts,
   Montserrat_400Regular,
@@ -20,7 +22,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Cesta />
+      <Cesta {...mock} />
     </SafeAreaView>
   );
 }
