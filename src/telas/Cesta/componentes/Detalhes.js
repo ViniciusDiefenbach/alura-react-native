@@ -3,7 +3,7 @@ import Texto from '../../../componentes/Texto'
 import { Image, StyleSheet, View } from 'react-native'
 import Botao from '../../../componentes/Botao'
 
-export default function Detalhes({ nome, fazenda, descricao, preco, logoFazenda, nomeFazenda, botao }) {
+export default function Detalhes({ nome, descricao, preco, logoFazenda, nomeFazenda, botao }) {
     return (
         <>
             <Texto style={estilos.nome}>{nome}</Texto>
@@ -56,7 +56,7 @@ const estilos = StyleSheet.create({
         fontWeight: "bold"
     },
     botao: {
-        marginVertical: 12,
+        marginTop: 12,
         backgroundColor: "#32af62"
     },
     textoBotao: {
