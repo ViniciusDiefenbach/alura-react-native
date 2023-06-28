@@ -1,7 +1,7 @@
-import React from 'react';
-import Topo from "./componentes/Topo";
-import Detalhes from './componentes/Detalhes';
-import { StyleSheet, View } from 'react-native';
+import React from 'react'
+import Topo from "./componentes/Topo"
+import Detalhes from './componentes/Detalhes'
+import { StyleSheet, View } from 'react-native'
 
 export default function Cesta({ topo, detalhes }) {
     return (
@@ -11,7 +11,7 @@ export default function Cesta({ topo, detalhes }) {
                 <Detalhes {...detalhes} />
             </View>
         </>
-    );
+    )
 }
 
 const estilos = StyleSheet.create({
@@ -19,4 +19,4 @@ const estilos = StyleSheet.create({
         paddingVertical: 20,
         paddingHorizontal: 16
     },
-});
+})
