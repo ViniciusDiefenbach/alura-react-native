@@ -10,15 +10,15 @@ export default function Cesta({ topo, detalhes, itens }) {
             <Topo {...topo} />
             <View style={estilos.cesta}>
                 <Detalhes {...detalhes} />
+                <Itens {...itens} />
             </View>
-            <Itens {...itens} />
         </ScrollView>
     )
 }
 
 const estilos = StyleSheet.create({
     cesta: {
-        paddingTop: 20,
+        paddingVertical: 20,
         paddingHorizontal: 16
-    },
+    }
 })

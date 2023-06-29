@@ -8,9 +8,9 @@ export default function Itens({ titulo, lista }) {
             <Texto style={estilos.titulo}>{titulo}</Texto>
             {lista.map((item) => {
                 return (
-                    <View key={item.nome}>
-                        <Image source={item.imagem} />
-                        <Texto>{item.nome}</Texto>
+                    <View key={item.nome} style={estilos.item}>
+                        <Image source={item.imagem} style={estilos.imagem} />
+                        <Texto style={estilos.nome}>{item.nome}</Texto>
                     </View>
                 )
             })}
@@ -26,5 +26,22 @@ const estilos = StyleSheet.create({
         marginBottom: 16,
         fontSize: 24,
         lineHeight: 32
+    },
+    item: {
+        flexDirection: "row",
+        borderBottomWidth: 1,
+        borderBottomColor: "#ECECEC",
+        paddingVertical: 16,
+        alignItems: "center"
+    },
+    imagem: {
+        width: 46,
+        height: 46,
+    },
+    nome: {
+        fontSize: 16,
+        lineHeight: 26,
+        marginLeft: 12,
+        color: "#464646"
     }
 })
